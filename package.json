@@ -16,9 +16,16 @@
     "sails-hook-sockets": "^2.0.0"
   },
   "devDependencies": {
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
     "eslint": "5.16.0",
     "htmlhint": "0.11.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
     "lesshint": "6.3.6",
+    "mini-css-extract-plugin": "^0.8.0",
+    "style-loader": "^1.0.0",
     "webpack": "^4.39.3"
   },
   "scripts": {
