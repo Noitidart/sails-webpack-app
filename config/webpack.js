@@ -17,13 +17,17 @@ module.exports.webpack = {
         new MiniCssExtractPlugin({
           filename: 'index.bundle.css'
         }),
-        new CopyPlugin([
-          {
-            from: './assets',
-            to: '../',
-            ignore: ['js/**/*', 'styles/**/*', '.eslintrc']
-          },
-        ]),
+        new CopyPlugin({
+          patterns: [
+            {
+              from: './assets',
+              to: '../',
+              globOptions: {
+                ignore: ['js/**/*', 'styles/**/*', '.eslintrc']
+              },
+            },
+          ],
+        }),
       ],
       module: {
         rules: [
